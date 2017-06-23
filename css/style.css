@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+p {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #1ac056;
+    text-align: center;
+}
+
+a {
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 400;
+    padding-right: 20px;
+/*  Wycentrowanie w pionie, trzeba jeszcze dodać padding-top w main-nav  */
+    line-height: 60px; 
+}
+
+a:hover {
+   color: #1ac056;
+   text-decoration: none;
+}
+
+.visited {
+   color: #1ac056;
+}
+
+.active {
+    background-color: bisque;
+}
+
+/* HEADER */
+/* Bootstrap Carousel Plugin */
+.container {
+    position: relative;
+    top: 0;
+/*    height: 100vh;*/
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@keyframes magnify {
+    from {transform: scale(1.0, 1.0);}
+    to {transform: scale(1.1, 1.1);}
+}
+
+.item, .item active {
+    animation-name: magnify;
+    animation-duration: 6s;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+#main-nav {
+    position: absolute;
+    text-align: right;
+    float: right;
+    padding-right: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-top: 10px;
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+/*    opacity: 0.85;*/
+    z-index: 2;
+}
+
+#o-nas, #fryzjerstwo {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+
+footer {
+    line-height: 10px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    background-color: #222;
+    font-size: 14px;
+    color: whitesmoke;
+}

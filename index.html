@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sunflower</title>
+    <!--    <link rel="stylesheet" href="css/style.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet">
+    <!--  Bootstrap Carousel Plugin  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    
+    <header class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#o-nas">O NAS</a></li>
+                        <li><a href="#fryzjerstwo">FRYZJERSTWO</a></li>
+                        <li><a href="#kosmetyka">KOSMETYKA</a></li>
+                        <li><a href="cennik">CENNIK</a></li>
+                        <li><a href="#kontakt">KONTAKT</a></li>
+                    </ul>
+                </nav>
+                <div id="logo">
+                    <img src="img/Sunflower-logo.png" alt="Sunflower logo">    
+                </div>
+                <div class="item active">
+                    <img src="img/hair2.jpg" alt="Los Angeles" style="width: 100%;">
+                </div>
+
+                <div class="item">
+                    <img src="img/hair3.jpg" alt="Chicago" style="width: 100%;">
+                </div>
+
+                <div class="item">
+                    <img src="img/hair4.jpg" alt="New york" style="width: 100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Poprzedni</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Następny</span>
+            </a>
+        </div>
+    </header>
+    <section id="o-nas">
+        <h1>O NAS</h1>
+        <p>Studio Urody powstało w 2007r. Od samego początku cieszy się uznaniem i renomą wśród naszych klientów. Jest to miejsce o nastrojowym i komfortowym wnętrzu, a także niezwykle miłej i ciepłej atmosferze. Wszystko to sprzyja relaksowi i pozwoli Wam na chwilę wyciszenia i oderwania się od problemów dnia codziennego. My natomiast swoją wiedzę i umiejętności zdobyte przez 20 lat praktyki, nieustannie wzbogacamy udziałami w szkoleniach i licznych pokazach. Naszym celem jest świadczenie usług na najwyższym poziomie, dlatego pracujemy na kosmetykach wyłącznie profesjonalnej jakości, a nasza pasja i dokładność zadowolą nawet najbardziej wymagających klientów.</p>
+    </section>
+    <section id="fryzjerstwo">
+        <h1>FRYZJERSTWO</h1>
+    </section>
+    <section id="kosmetyka">
+
+    </section>
+    <section id="cennik">
+
+    </section>
+    <section id="kontakt">
+
+    </section>
+    <footer id="footer">
+        <p>ul. B-pa Padniewskiego 16, Kraków</p>
+        <p>tel. 731 937 737</p>
+        <p>www.studio-sunflower.com</p>
+    </footer>
 </body>
+
 </html>
