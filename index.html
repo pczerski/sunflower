@@ -8,11 +8,13 @@
     <!--    <link rel="stylesheet" href="css/style.css">-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus" rel="stylesheet">
     <!--  Bootstrap Carousel Plugin  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
@@ -28,20 +30,34 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <nav id="main-nav">
-                    <ul>
-                        <li><a href="#o-nas">O NAS</a></li>
-                        <li><a href="#fryzjerstwo">FRYZJERSTWO</a></li>
-                        <li><a href="#kosmetyka">KOSMETYKA</a></li>
-                        <li><a href="cennik">CENNIK</a></li>
-                        <li><a href="#kontakt">KONTAKT</a></li>
-                    </ul>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" ariaexpanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<!--                            <a class="navbar-brand" href="#">Sunflower</a>-->
+                       <img id="navbar-brand" src="img/logo-white.png" alt="Sunflower logo">
+                        </div>
+                        <div class="collapse navbar-collapse" id="navigation">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#o-nas">O NAS</a></li>
+                                <li><a href="#fryzjerstwo">FRYZJERSTWO</a></li>
+                                <li><a href="#kosmetyka">KOSMETYKA</a></li>
+                                <li><a href="#cennik">CENNIK</a></li>
+                                <li><a href="#kontakt">KONTAKT</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
                 <div id="logo">
-                    <img src="img/Sunflower-logo.png" alt="Sunflower logo">    
+                    <img src="img/Sunflower-logo.png" alt="Sunflower logo">
                 </div>
                 <div class="item active">
-                    <img src="img/hair2.jpg" alt="Los Angeles" style="width: 100%;">
+                    <img src="img/hair4.jpg" alt="Los Angeles" style="width: 100%;">
                 </div>
 
                 <div class="item">
@@ -49,7 +65,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="img/hair4.jpg" alt="New york" style="width: 100%;">
+                    <img src="img/hair5.jpg" alt="New york" style="width: 100%;">
                 </div>
             </div>
 
@@ -66,25 +82,296 @@
     </header>
     <section id="o-nas">
         <h1>O NAS</h1>
-        <p>Studio Urody powstało w 2007r. Od samego początku cieszy się uznaniem i renomą wśród naszych klientów. Jest to miejsce o nastrojowym i komfortowym wnętrzu, a także niezwykle miłej i ciepłej atmosferze. Wszystko to sprzyja relaksowi i pozwoli Wam na chwilę wyciszenia i oderwania się od problemów dnia codziennego. My natomiast swoją wiedzę i umiejętności zdobyte przez 20 lat praktyki, nieustannie wzbogacamy udziałami w szkoleniach i licznych pokazach. Naszym celem jest świadczenie usług na najwyższym poziomie, dlatego pracujemy na kosmetykach wyłącznie profesjonalnej jakości, a nasza pasja i dokładność zadowolą nawet najbardziej wymagających klientów.</p>
+        <br><br>
+        <figure id="o-nas-left">
+            <img src="img/hair-2.png" alt="Nasz salon" style="width: 350px; border-radius: 50%">
+        </figure>
+        <div id="o-nas-right">
+            <p>Studio Urody Sunflower powstało w 2007 roku i od samego początku cieszy się uznaniem i renomą wśród swoich klientów. Jest to miejsce o nastrojowym i komfortowym wnętrzu, a także niezwykle miłej i ciepłej atmosferze. Wszystko to sprzyja relaksowi, i pozwoli Ci na chwilę wyciszenia i oderwania się od problemów dnia codziennego. Naszym celem, od początku działalności, było świadczenie usług na najwyższym poziomie i co za tym idzie, zadowolenie naszych klientów.</p>
+            <p>Swoją wiedzę i umiejętności, zdobyte przez 20 lat praktyki, nieustannie wzbogacamy udziałami w licznych szkoleniach i pokazach. Pracujemy na kosmetykach wyłącznie najwyższej jakości, a nasza pasja, dokładność i profesjonalizm zadowolą nawet najbardziej wymagających klientów.</p>
+            <p>Renata Napora & Paulina Kłosińska</p>
+            <p>Serdecznie zapraszamy!</p>
+        </div>
     </section>
     <section id="fryzjerstwo">
         <h1>FRYZJERSTWO</h1>
+        <h2>Zakres usług</h2><br>
+        <p>Kliknij w sekcję, aby dowiedzieć się więcej...</p>
+        <div id="accordion-container">
+            <button class="accordion">STRZYŻENIE DAMSKIE, MĘSKIE, DZIECIĘCE</button>
+            <div class="panel">
+                <p>Odpowiednie cięcie dopasowane do rodzaju włosów, rysów twarzy, także stylu i charakteru, które cię wyróżniają to gwarancja dobrego samopoczucia i wyrazistości twojej fryzury, a nasze profesjonalne podejście do dzieci sprawia, że radzimy sobie z każdym nawet najmniejszym maluchem</p>
+            </div>
+
+            <button class="accordion">MODELOWANIE, PROSTOWANIE</button>
+            <div class="panel">
+                <p>Masz ważne spotkanie, chcesz zrobić na kimś wrażenie, lub zwyczajnie pragniesz się zrelaksować i poprawić swój nastrój? Oddaj się w nasze ręce. Dla nas praca jest ogromną pasją, sprawimy, że twoje włosy będą doskonale wystylizowane, odpowiednio do sytuacji, okazji oraz Twoich oczekiwań.</p>
+            </div>
+
+            <button class="accordion">UPIĘCIA ŚLUBNE I WIECZOROWE</button>
+            <div class="panel">
+                <p>Pewne miejsca i okazje zobowiązują, dlatego zaufaj nam, a my wyczarujemy z twoich włosów fryzurę olśniewającą i wyjątkową. Sprawdź nasze umiejętności i umów się na upięcie próbne, które wykonamy za połowę ceny.</p>
+            </div>
+
+            <button class="accordion">ZABIEGI ODŻYWCZO PIELĘGNACYJNE</button>
+            <div class="panel">
+                <p>Nie ma nic piękniejszego od zdrowych, lśniących włosów. Zadbaj o swoje włosy, dając im to czego pragną. Zaspokoimy ich potrzeby i sprawimy, że po wykonaniu odpowiedniego zabiegu odżywczego włosy nabiorą blasku, witalności oraz sprężystości. Zapoznaj się z naszą gamą kosmetyków oraz zabiegów i zrelaksuj się podczas zmysłowego masażu głowy, który jest częścią każdego rytuału pielęgnacyjnego.</p>
+            </div>
+
+            <button class="accordion">BALEYAGE</button>
+            <div class="panel">
+                <p>Wielopłaszczyznowa magia... to gra światła i kolorów, która wydobędzie Twoje naturalne piękno i podkreśli blask Twojego spojrzenia. Wybierzemy odpowiednią formę baleyage dla Ciebie i podkreślimy to na czym Ci najbardziej zależy.</p>
+            </div>
+
+            <button class="accordion">REFLEKSY</button>
+            <div class="panel">
+                <p>Nie musisz już czekać do lata, aby uzyskać na włosach grę światła. Refleksy położone na kilku pasmach pozwolą stworzyć efekt włosów muśniętych słońcem. Rozświetl swoją fryzurę, lub dodaj objętości nadając włosom blask.</p>
+            </div>
+
+            <button class="accordion">KOLORYZACJA</button>
+            <div class="panel">
+                <p>To świat nieograniczonych możliwości. Sama możesz zdecydować jaki ma być Twój kolor. Efektowny, ekspresyjny, zapierający dech, a może elegancki, delikatny lub wyrafinowany? Pracujemy na farbach najwyższej jakości, które pozwolą na uzyskanie koloru, o jakim marzysz. A kwiatowo-owocowy zapach uprzyjemni proces koloryzacji. Socolor Beauty to krem do koloryzacji trwałej zawierający naturalny olejek jojoba (odżywia i wygładza powierzchnię włosa), polimery HexaForce (wzmacniają strukturę włosa) oraz kompleks ceramidowy, który przywraca właściwą strukturę włosom porowatym.</p>
+            </div>
+
+            <button class="accordion">KOLORYZACJA BEZ AMONIAKU</button>
+            <div class="panel">
+                <p>Color Sync został stworzony, aby zapewnić jednolity, doskonale kryjący nawet siwe włosy efekt, a jednocześnie zregenerować i przywrócić prawidłową strukturę włosom zniszczonym dzięki czemu są one pełne blasku i miękkości. Color Sync Clear jest to produkt bezbarwny nadający tylko połysk włosom naturalnym lub blask włosom farbowanym bez konieczności ponownej koloryzacji.</p>
+            </div>
+
+            <button class="accordion">DEKOLORYZACJA</button>
+            <div class="panel">
+                <p>Jeśli chciałabyś wrócić do naturalnego koloru włosów lub zastanawiasz się nad słonecznym odcieniem blondu, odwiedź nasz salon. My w trosce o najwyższą jakość usługi, a przede wszystkim bezpieczeństwo Twoich włosów stosujemy do tego zabiegu tylko najlepsze i sprawdzone produkty, dobrane odpowiednio do pożądanego stopnia rozjaśnienia. Po usłudze wykonujemy zabiegi, które pozwolą na kompleksową odbudowę oraz odżywienie Twoich włosów.</p>
+            </div>
+
+            <button class="accordion">TRWAŁA ONDULACJA</button>
+            <div class="panel">
+                <p>Masz ochotę na całkowitą zmianę wizerunku, masz proste włosy a pragniesz mieć burzę loków, bądź chcesz im delikatnie nadać puszystość? Zaawansowana technologia Opti-Wave zapewnia delikatne działanie, nadaje włosom efekt średniego skrętu, wzbogacony ochronnym kompleksem odżywczym, dzięki któremu włosy pozostają naturalne w dotyku.</p>
+            </div>
+
+            <button class="accordion">PRZEDŁUŻANIE I ZAGĘSZCZANIE</button>
+            <div class="panel">
+                <p>Zabieg polega na doklejaniu do włosów naturalnych kosmyków włosów w identycznym kolorze za pomocą keratyny. Łączenia te nie są widoczne, a cały zabieg trwa 2,5 godziny. Efekt pięknych długich włosów utrzymuje się 3-5 miesięcy. Włosy możemy poddawać zabiegom chemicznym, takim jak: farbowanie, rozjaśnianie, trwałą ondulacja. Możemy je prostować, tonizować, szczotkować. Będziesz zachwycona odmianą wizerunku.</p>
+            </div>
+
+            <button class="accordion">KERATYNOWE WYGŁADZANIE WŁOSÓW</button>
+            <div class="panel">
+                <p><b>Brazylijska rewolucja keratynowa QOD</b></p>
+
+                <p>Terapia keratynowa QOD to rekonstrukcja włosów o szerokim i długofalowym działaniu. W chwili obecnej to jedyny zabieg na świecie, który na wiele miesięcy zmienia strukturę i wygląd zewnętrzny włosów. W przeciwieństwie do innych technik dostępnych na rynku, prostowanie przy użyciu keratyny jest całkowicie bezpieczne i dodatkowo poprawia kondycję włosów bez uszkodzenia ich struktury. Aktywna biologicznie keratyna wykazuje największe działanie na włosach silnie uszkodzonych i osłabionych</p>
+
+                <p><b>Jakie włosy najbardziej kwalifikują się do zabiegu?</b></p>
+
+                <p>Nasze włosy składają się głównie z keratyny, włóknistego białka złożonego z 15 aminokwasów. Jeśli zaczyna jej brakować, nasze włosy słabną i niszczeją. Keratyna jest przeznaczona do wszystkich rodzajów włosów – a co więcej im włosy bardziej suche i zniszczone tym bardziej spektakularny efekt końcowy.</p>
+
+                <p><b>Czym jest keratyna?</b></p>
+
+                <p>Keratyna to główne białko budulcowe włosów, paznokci i skóry odpowiadające za ich kondycję i zdrowy wygląd. W trakcie naszego życia bardzo często dochodzi jednak do uszkodzenia jego struktur poprzez oddziaływanie czynników zewnętrznych (farbowanie, szczotkowanie, słońce, wiatr, chlorowana woda).</p>
+
+                <p><b>Rezultaty po zastosowaniu keratyny z linii QOD</b></p>
+
+                <p>Włosy puszyste i delikatne zostaną wyprostowane w 90 – 100%, a rezultat utrzyma się do 5 miesięcy. Włosy średniej objętości i falowane zostaną wyprostowane w 80-90%, a rezultat utrzyma się do 4 miesięcy, włosy gęste i bardzo kręcone zostaną wyprostowane w 70-80 %, a rezultat utrzyma się do 3 miesięcy.</p>
+            </div>
+        </div>
     </section>
     <section id="kosmetyka">
-
+        <h1>KOSMETYKA</h1>
+        <h2>Zakres usług</h2><br>
     </section>
     <section id="cennik">
-
+        <h1>CENNIK</h1>
+        <h2>Fryzjerstwo</h2><br>
+        <table>
+            <tr>
+                <th>Rodzaj usługi</th>
+                <th>Włosy krótkie</th>
+                <th>Włosy średnie</th>
+                <th>Włosy długie</th>
+            </tr>
+            <tr>
+                <td>Strzyżenie damskie z modelowaniem (mycie, strzyżenie, modelowanie)</td>
+                <td>40 zł</td>
+                <td>50 zł</td>
+                <td>60 zł</td>
+            </tr>
+            <tr>
+                <td>Upięcie wieczorowe (mycie, wałki, upięcie)</td>
+                <td>---</td>
+                <td>60-70 zł</td>
+                <td>70 zł</td>
+            </tr>
+            <tr>
+                <td>Upięcia ślubne (mycie, kręcenie, upięcie)</td>
+                <td>---</td>
+                <td>70-80 zł</td>
+                <td>80 zł</td>
+            </tr>
+            <tr>
+                <td>Zabiegi pielęgnacyjne (mycie masaż, maska)</td>
+                <td>20 zł</td>
+                <td>30 zł</td>
+                <td>40 zł</td>
+            </tr>
+            <tr>
+                <td>Baleyage + komplet (Baleyage, mycie, strzyżenie, modelowanie, 1 kolor)</td>
+                <td>100 zł</td>
+                <td>130 zł</td>
+                <td>160 zł</td>
+            </tr>
+            <tr>
+                <td>Baleyage Duo + komplet (Baleyage, mycie, strzyżenie, modelowanie, 2 kolory)</td>
+                <td>120 zł</td>
+                <td>150 zł</td>
+                <td>180 zł</td>
+            </tr>
+            <tr>
+                <td>Koloryzacja + komplet (farba, mycie, strzyżenie, modelowanie)</td>
+                <td>90 zł</td>
+                <td>120 zł</td>
+                <td>150 zł</td>
+            </tr>
+            <tr>
+                <td>Dekoloryzacja (dekoloryzacja, mycie, suszenie)</td>
+                <td>40 zł</td>
+                <td>60 zł</td>
+                <td>80 zł</td>
+            </tr>
+            <tr>
+                <td>Trwała ondulacja + komplet (trwała, mycie, strzyżenie, modelowanie)</td>
+                <td>80 zł</td>
+                <td>100 zł</td>
+                <td>120 zł</td>
+            </tr>
+            <tr>
+                <td>Trwała HEADLINES (trwała - efekt puszystości, mycie, strzyżenie, modelowanie)</td>
+                <td>100 zł</td>
+                <td>120 zł</td>
+                <td>140 zł</td>
+            </tr>
+            <tr>
+                <td>Trwała prostująca (trwała prostująca, mycie strzyżenie, prostowanie)</td>
+                <td>---</td>
+                <td>150 zł</td>
+                <td>180 zł</td>
+            </tr>
+            <tr>
+                <td>Przedłużanie i zagęszczanie włosów</td>
+                <td>---</td>
+                <td>od 200 zł<br>(lub jedno pasemko 5 zł)</td>
+                <td>od 200 zł<br>(lub jedno pasemko 5 zł)</td>
+            </tr>
+            <tr>
+                <td>Keratynowe prostowanie i wygładzanie włosów</td>
+                <td>300 zł</td>
+                <td>400 zł</td>
+                <td>500 zł</td>
+            </tr>
+            <tr>
+                <td>Strzyżenie męskie - dziecięce</td>
+                <td>20 zł</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Strzyżenie brody lub wąsa</td>
+                <td>5 zł</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Koloryzacja + strzyżenie męskie (farba, mycie, strzyżenie, modelowanie)</td>
+                <td>60 zł</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Kuracja zapobiegająca wypadaniu włosów (mycie, aplikacja ampułki, masaż, modelowanie)</td>
+                <td>15 zł</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
     </section>
     <section id="kontakt">
+        <h1>KONTAKT</h1><br><br>
+        <div id="map">
 
+        </div>
+        <div id="dane-kontaktowe">
+            <h5>ADRES</h5>
+            <p>ul. Kuźnicy Kołłątajowskiej 15c, 31-234 Kraków</p><br>
+            <h5>TELEFONY</h5>
+            <p>Fryzjerstwo - Renara Napora, tel. 692 646 636</p>
+            <p>Kosmetyka - Paulina Kłosińska, tel. 880 026 874</p><br>
+            <h5>GODZINY OTWARCIA</h5>
+            <table>
+                <tr>
+                    <th></th>
+                    <th colspan="2">Fryzjerstwo*</th>
+                    <th colspan="2">Kosmetyka</th>
+                </tr>
+                <tr>
+                    <td>Pon.</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                    <td>9:00</td>
+                    <td>15:00</td>
+                </tr>
+                <tr>
+                    <td>Wt.</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                    <td>14:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Śr.</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Czw.</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                    <td>9:00</td>
+                    <td>15:00</td>
+                </tr>
+                <tr>
+                    <td>Pią.</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                    <td>14:00</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>Sob.</td>
+                    <td>9:00</td>
+                    <td>20:00</td>
+                    <td>8:00</td>
+                    <td>20:00</td>
+                </tr>
+            </table>
+            <p>* W wyjątkowych okolicznościach możemy wydłużyć nasze godziny pracy.</p>
+        </div>
     </section>
     <footer id="footer">
-        <p>ul. B-pa Padniewskiego 16, Kraków</p>
-        <p>tel. 731 937 737</p>
-        <p>www.studio-sunflower.com</p>
+        <div>
+            <p>www.studio-sunflower.pl</p>
+        </div>
+        <div>
+            <a href="http://www.studio-sunflower.pl">
+                <img src="img/logo-orange.png" alt="Sunflower logo" style="padding-bottom: 10px;">
+            </a>
+        </div>
+        <div>
+            <p>Copyright © Studio Sunflower 2017</p>
+        </div>
+
     </footer>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5_ukaus4pUKzdAAd13cEcSGMlsIWjj50 &callback=myMap">
+    </script>
 </body>
 
 </html>
