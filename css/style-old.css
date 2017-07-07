@@ -1,11 +1,11 @@
 body,
 h5 {
     margin: 0;
-    font-family: 'Lato', sans-serif;
-    //font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+    //font-family: 'Lato', sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
     //font-family: "Georgia","Times New Roman","Times",serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     color: #394c7a;
 }
 
@@ -37,18 +37,6 @@ h5 {
     text-align: center;
 }
 
-#o-nas,
-#fryzjerstwo,
-#kosmetyka,
-#cennik,
-#kontakt {
-    padding-top: 50px;
-    padding-bottom: 120px;
-}
-
-
-/* HEADER */
-
 .navbar-fixed-top {
     background-color: transparent;
     padding-top: 10px;
@@ -56,9 +44,7 @@ h5 {
     border: none;
 }
 
-
 /* Po wstawieniu obrazka niepotrzebne */
-
 #navbar-brand {
     color: aliceblue;
     padding-top: 5px;
@@ -92,6 +78,8 @@ h5 {
     background-color: bisque;
 }
 
+
+/* HEADER */
 
 /* Bootstrap Carousel Plugin */
 
@@ -129,6 +117,15 @@ h5 {
     z-index: 2;
 }
 
+#o-nas,
+#fryzjerstwo,
+#kosmetyka,
+#cennik,
+#kontakt {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
 
 /* O NAS */
 
@@ -147,12 +144,12 @@ h5 {
     text-align: center;
     float: left;
     transform: scale(1.0);
-    transition-duration: 4.5s;
+    transition-duration: .5s;
 }
 
 #o-nas-left:hover {
     transform: scale(1.05);
-    transition-duration: 4.5s;
+    transition-duration: .5s;
 }
 
 #o-nas-right {
@@ -219,6 +216,16 @@ button.accordion,
     width: 95%;
 }
 
+
+/*
+.panel > p {
+    //margin-top: 10px;
+    //margin-bottom: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+*/
+
 .panel {
     /*  Odległość między sekcjami  */
     margin-bottom: 5px;
@@ -256,10 +263,6 @@ button.accordion.active:after {
 
 /* CENNIK */
 
-#cennik p {
-    text-align: center;
-}
-
 table {
     width: 90%;
     margin-left: auto;
@@ -274,14 +277,6 @@ tr:nth-child(even) {
 tr:nth-child(even):hover {
     background-color: #def1ff;
     transition-duration: .5s;
-}
-
-tr:nth-child(odd) {
-    background-color: #fff;
-}
-
-tr:nth-child(1) {
-    background-color: transparent;
 }
 
 tr:nth-child(odd):hover {
@@ -313,130 +308,25 @@ th {
 }
 
 
-/* Taby */
-
-.tabs {
-    //min-width: 320px;
-    max-width: 100%;
-    padding: 50px;
-    margin: 0 auto;
-    background: #fff;
-}
-
-#cennik-fryzjerstwo,
-#cennik-kosmetyka,
-#cennik-solarium {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid #ddd;
-}
-
-td .center {
-    text-align: center;
-}
-
-input {
-    display: none;
-}
-
-label {
-    display: inline-block;
-    margin: 0 0 -1px;
-    padding: 15px 25px;
-    font-weight: 600;
-    text-align: center;
-    color: #a1a7b5;
-    border: 1px solid transparent;
-}
-
-label:before {
-    font-family: fontawesome;
-    font-weight: normal;
-    margin-right: 10px;
-}
-
-label[for*='1']:before {
-    content: '\f0c4';
-}
-
-label[for*='2']:before {
-    content: '\f1fc';
-}
-
-label[for*='3']:before {
-    content: '\f2c9';
-}
-
-label:hover {
-    color: #656f86;
-    cursor: pointer;
-}
-
-input:checked+label {
-    color: #394c7a;
-    border: 1px solid #ddd;
-    border-top: 2px solid #f88159;
-    border-bottom: 1px solid #fff;
-}
-
-#tab1:checked~#cennik-fryzjerstwo,
-#tab2:checked~#cennik-kosmetyka,
-#tab3:checked~#cennik-solarium {
-    display: block;
-}
-
-
 /* KONTAKT */
 
 #kontakt {
-    text-align: center;
-    color: aliceblue;
-}
-
-#kontakt h1,
-#kontakt h5 {
-    color: aliceblue;
-}
-
-.parallax {
-    /* The image used */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/salon.jpg);
-    /* Set a specific height */
-    //min-height: 500px; 
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
 #map,
 #dane-kontaktowe {
     display: inline-block;
-    width: 45%;
 }
 
 #map {
-    height: 520px;
+    width: 50%;
+    height: 550px;
 }
 
 #dane-kontaktowe {
-    float: right;
-}
-
-#kontakt table {
-    width: 70%;
-}
-
-#kontakt tr,
-#kontakt th {
-    background-color: transparent;
-}
-
-#kontakt td,
-#kontakt th {
-    border-bottom-color: transparent;
+    position: absolute;
+    text-align: center;
 }
 
 footer {
@@ -444,11 +334,11 @@ footer {
     justify-content: center;
     align-items: center;
     line-height: 10px;
-    height: 70px;
+    height: 60px;
     padding-top: 11px;
-    //background-color: #222;
+    background-color: #222;
     font-size: 14px;
-    //color: darkgray;
+    color: darkgray;
 }
 
 footer div {

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -39,8 +40,8 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<!--                            <a class="navbar-brand" href="#">Sunflower</a>-->
-                       <img id="navbar-brand" src="img/logo-white.png" alt="Sunflower logo">
+                            <!--                            <a class="navbar-brand" href="#">Sunflower</a>-->
+                            <img id="navbar-brand" src="img/logo-white.png" alt="Sunflower logo">
                         </div>
                         <div class="collapse navbar-collapse" id="navigation">
                             <ul class="nav navbar-nav navbar-right">
@@ -179,119 +180,238 @@
     </section>
     <section id="cennik">
         <h1>CENNIK</h1>
-        <h2>Fryzjerstwo</h2><br>
-        <table>
-            <tr>
-                <th>Rodzaj usługi</th>
-                <th>Włosy krótkie</th>
-                <th>Włosy średnie</th>
-                <th>Włosy długie</th>
-            </tr>
-            <tr>
-                <td>Strzyżenie damskie z modelowaniem (mycie, strzyżenie, modelowanie)</td>
-                <td>40 zł</td>
-                <td>50 zł</td>
-                <td>60 zł</td>
-            </tr>
-            <tr>
-                <td>Upięcie wieczorowe (mycie, wałki, upięcie)</td>
-                <td>---</td>
-                <td>60-70 zł</td>
-                <td>70 zł</td>
-            </tr>
-            <tr>
-                <td>Upięcia ślubne (mycie, kręcenie, upięcie)</td>
-                <td>---</td>
-                <td>70-80 zł</td>
-                <td>80 zł</td>
-            </tr>
-            <tr>
-                <td>Zabiegi pielęgnacyjne (mycie masaż, maska)</td>
-                <td>20 zł</td>
-                <td>30 zł</td>
-                <td>40 zł</td>
-            </tr>
-            <tr>
-                <td>Baleyage + komplet (Baleyage, mycie, strzyżenie, modelowanie, 1 kolor)</td>
-                <td>100 zł</td>
-                <td>130 zł</td>
-                <td>160 zł</td>
-            </tr>
-            <tr>
-                <td>Baleyage Duo + komplet (Baleyage, mycie, strzyżenie, modelowanie, 2 kolory)</td>
-                <td>120 zł</td>
-                <td>150 zł</td>
-                <td>180 zł</td>
-            </tr>
-            <tr>
-                <td>Koloryzacja + komplet (farba, mycie, strzyżenie, modelowanie)</td>
-                <td>90 zł</td>
-                <td>120 zł</td>
-                <td>150 zł</td>
-            </tr>
-            <tr>
-                <td>Dekoloryzacja (dekoloryzacja, mycie, suszenie)</td>
-                <td>40 zł</td>
-                <td>60 zł</td>
-                <td>80 zł</td>
-            </tr>
-            <tr>
-                <td>Trwała ondulacja + komplet (trwała, mycie, strzyżenie, modelowanie)</td>
-                <td>80 zł</td>
-                <td>100 zł</td>
-                <td>120 zł</td>
-            </tr>
-            <tr>
-                <td>Trwała HEADLINES (trwała - efekt puszystości, mycie, strzyżenie, modelowanie)</td>
-                <td>100 zł</td>
-                <td>120 zł</td>
-                <td>140 zł</td>
-            </tr>
-            <tr>
-                <td>Trwała prostująca (trwała prostująca, mycie strzyżenie, prostowanie)</td>
-                <td>---</td>
-                <td>150 zł</td>
-                <td>180 zł</td>
-            </tr>
-            <tr>
-                <td>Przedłużanie i zagęszczanie włosów</td>
-                <td>---</td>
-                <td>od 200 zł<br>(lub jedno pasemko 5 zł)</td>
-                <td>od 200 zł<br>(lub jedno pasemko 5 zł)</td>
-            </tr>
-            <tr>
-                <td>Keratynowe prostowanie i wygładzanie włosów</td>
-                <td>300 zł</td>
-                <td>400 zł</td>
-                <td>500 zł</td>
-            </tr>
-            <tr>
-                <td>Strzyżenie męskie - dziecięce</td>
-                <td>20 zł</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Strzyżenie brody lub wąsa</td>
-                <td>5 zł</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Koloryzacja + strzyżenie męskie (farba, mycie, strzyżenie, modelowanie)</td>
-                <td>60 zł</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Kuracja zapobiegająca wypadaniu włosów (mycie, aplikacja ampułki, masaż, modelowanie)</td>
-                <td>15 zł</td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="tabs">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Fryzjerstwo</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Kosmetyka</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Solarium</label>
+            <div id="cennik-fryzjerstwo">
+                <table>
+                    <tr>
+                        <th>Rodzaj usługi</th>
+                        <th>Włosy krótkie</th>
+                        <th>Włosy średnie</th>
+                        <th>Włosy długie</th>
+                    </tr>
+                    <tr>
+                        <td>Strzyżenie damskie z modelowaniem (mycie, strzyżenie, modelowanie)</td>
+                        <td>40 zł</td>
+                        <td>50 zł</td>
+                        <td>60 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Upięcie wieczorowe (mycie, wałki, upięcie)</td>
+                        <td>---</td>
+                        <td>60-70 zł</td>
+                        <td>70 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Upięcia ślubne (mycie, kręcenie, upięcie)</td>
+                        <td>---</td>
+                        <td>70-80 zł</td>
+                        <td>80 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Zabiegi pielęgnacyjne (mycie masaż, maska)</td>
+                        <td>20 zł</td>
+                        <td>30 zł</td>
+                        <td>40 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Baleyage + komplet (Baleyage, mycie, strzyżenie, modelowanie, 1 kolor)</td>
+                        <td>100 zł</td>
+                        <td>130 zł</td>
+                        <td>160 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Baleyage Duo + komplet (Baleyage, mycie, strzyżenie, modelowanie, 2 kolory)</td>
+                        <td>120 zł</td>
+                        <td>150 zł</td>
+                        <td>180 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Koloryzacja + komplet (farba, mycie, strzyżenie, modelowanie)</td>
+                        <td>90 zł</td>
+                        <td>120 zł</td>
+                        <td>150 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Dekoloryzacja (dekoloryzacja, mycie, suszenie)</td>
+                        <td>40 zł</td>
+                        <td>60 zł</td>
+                        <td>80 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Trwała ondulacja + komplet (trwała, mycie, strzyżenie, modelowanie)</td>
+                        <td>80 zł</td>
+                        <td>100 zł</td>
+                        <td>120 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Trwała HEADLINES (trwała - efekt puszystości, mycie, strzyżenie, modelowanie)</td>
+                        <td>100 zł</td>
+                        <td>120 zł</td>
+                        <td>140 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Trwała prostująca (trwała prostująca, mycie strzyżenie, prostowanie)</td>
+                        <td>---</td>
+                        <td>150 zł</td>
+                        <td>180 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Przedłużanie i zagęszczanie włosów</td>
+                        <td>---</td>
+                        <td>od 200 zł<br>(lub jedno pasemko 5 zł)</td>
+                        <td>od 200 zł<br>(lub jedno pasemko 5 zł)</td>
+                    </tr>
+                    <tr>
+                        <td>Keratynowe prostowanie i wygładzanie włosów</td>
+                        <td>300 zł</td>
+                        <td>400 zł</td>
+                        <td>500 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Strzyżenie męskie - dziecięce</td>
+                        <td>20 zł</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Strzyżenie brody lub wąsa</td>
+                        <td>5 zł</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Koloryzacja + strzyżenie męskie (farba, mycie, strzyżenie, modelowanie)</td>
+                        <td>60 zł</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Kuracja zapobiegająca wypadaniu włosów (mycie, aplikacja ampułki, masaż, modelowanie)</td>
+                        <td>15 zł</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="cennik-kosmetyka">
+                <table>
+                    <tr>
+                        <td><b>PEELING KAWITACYJNY</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Peeling kawitacyjny + ampułka</td>
+                        <td>50 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Peeling kawitacyjny + serum + maska algowa</td>
+                        <td>80 zl</td>
+                    </tr>
+                    <tr>
+                        <td>Peeling kawitacyjny + masaż + serum + maska algowa</td>
+                        <td>100 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Peeling kawitacyjny + sonoforeza</td>
+                        <td>80 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Peeling kawitacyjny + sonoforeza + maska algowa</td>
+                        <td>100 zł</td>
+                    </tr>
+                    <tr>
+                        <td><b>ZABIEGI OCZYSZCZANIA</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie twarzy + masaż + maska kremowa</td>
+                        <td>120 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie twarzy + masaż + maska algowa</td>
+                        <td>120 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie twarzy + masaż + peeling kawitacyjny + maska</td>
+                        <td>130 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie dekoltu + maska</td>
+                        <td>100 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie dekoltu + maska</td>
+                        <td>120 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie pleców + maska</td>
+                        <td>100 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Oczyszczanie pleców + peeling kawitacyjny + maska</td>
+                        <td>120 zł</td>
+                    </tr>
+                    <tr>
+                        <td><b>SONOFOREZA</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sonoforeza + ampułka</td>
+                        <td>50 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Sonoforeza + ampułka + maska algowa</td>
+                        <td>80 zł</td>
+                    </tr>
+                    <tr>
+                        <td><b>MEZOTERAPIA BEZIGŁOWA</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Twarz + szyja + maska algowa</td>
+                        <td>160 zł</td>
+                    </tr>
+                    <tr>
+                        <td>Twarz + szyja + dekolt + maska algowa</td>
+                        <td>200 zł</td>
+                    </tr>
+                </table><br>
+                <p>Poszczególne zabiegi można łączyć ze sobą dla uzyskania lepszych efektów</p>
+                <p>Wszystkie niezbędne preparaty wliczone są w cenę zabiegów</p>
+            </div>
+            <div id="cennik-solarium">
+                <table>
+                    <tr>
+                        <td>1 minuta</td>
+                        <td>1 zł</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center"><b>KARNETY</b></td>
+                    </tr>
+                    <tr>
+                        <td>60 minut</td>
+                        <td>50 zł</td>
+                    </tr>
+                    <tr>
+                        <td>120 minut</td>
+                        <td>100 zł</td>
+                    </tr>
+                    <tr>
+                        <td>180 minut</td>
+                        <td>150 zł</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </section>
-    <section id="kontakt">
+    <section id="kontakt" class="parallax">
         <h1>KONTAKT</h1><br><br>
         <div id="map">
 
@@ -352,7 +472,7 @@
                     <td>20:00</td>
                 </tr>
             </table>
-            <p>* W wyjątkowych okolicznościach możemy wydłużyć nasze godziny pracy.</p>
+            <p>* W wyjątkowych okolicznościach możemy wydłużyć nasze godziny pracy</p>
         </div>
     </section>
     <footer id="footer">
