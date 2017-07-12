@@ -1,8 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-    $(window).scroll();
-    //$('.parallax').parallax();
+    //$('.collapsible').collapse();
 });
 
 $(window).scroll(function () {
@@ -67,5 +66,4 @@ function myMap() {
         position: sunflower,
         map: map
     });
-    var Map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }

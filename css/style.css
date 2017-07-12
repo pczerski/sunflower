@@ -37,9 +37,18 @@ h5 {
     text-align: center;
 }
 
+.text-small {
+    font-size: 14px;
+}
+
+.text-center {
+    //text-align: left;
+}
+
 #o-nas,
 #fryzjerstwo,
 #kosmetyka,
+#solarium,
 #cennik,
 #kontakt {
     padding-top: 50px;
@@ -58,6 +67,24 @@ h5 {
 
 
 /* Po wstawieniu obrazka niepotrzebne */
+
+ul {
+    text-align: right;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    right: 30px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #f88159;
+}
+
+
+.navbar-toggle:hover .icon-bar {
+    background-color: aliceblue;
+}
 
 #navbar-brand {
     color: aliceblue;
@@ -132,10 +159,7 @@ h5 {
 
 /* O NAS */
 
-#o-nas {
-    width: 100%;
-    overflow: hidden;
-}
+#o-nas {}
 
 #o-nas-left,
 #o-nas-right {
@@ -253,6 +277,23 @@ button.accordion.active:after {
     /* Unicode character for "minus" sign (-) */
 }
 
+/* SOLARIUM */
+#solarium {
+    background-color: #f8fcff;
+}
+
+#solarium.parallax {
+    /* The image used */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/solar.jpg);
+    /* Set a specific height */
+    //min-height: 500px; 
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* CENNIK */
 
@@ -293,18 +334,12 @@ td,
 th {
     //border: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
-    text-align: center;
     padding: 8px;
 }
 
 td {
     font-size: 16px;
     font-weight: 400;
-}
-
-td:first-child,
-th:first-child {
-    text-align: left;
 }
 
 th {
@@ -331,8 +366,18 @@ th {
     border-top: 1px solid #ddd;
 }
 
-td .center {
-    text-align: center;
+#cennik-fryzjerstwo td:nth-child(2),
+#cennik-fryzjerstwo td:nth-child(3),
+#cennik-fryzjerstwo td:nth-child(4) {
+    width: 13%;
+}
+
+#cennik-solarium table {
+    width: 60%;
+}
+
+#cennik-solarium td:first-child {
+    width: 85%;
 }
 
 input {
@@ -398,7 +443,7 @@ input:checked+label {
     color: aliceblue;
 }
 
-.parallax {
+#kontakt.parallax {
     /* The image used */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/salon.jpg);
     /* Set a specific height */
@@ -447,7 +492,6 @@ footer {
     height: 70px;
     padding-top: 11px;
     //background-color: #222;
-    font-size: 14px;
     //color: darkgray;
 }
 
