@@ -55,6 +55,9 @@ h5 {
     padding-bottom: 120px;
 }
 
+#fryzjerstwo {
+    padding-bottom: 0;
+}
 
 /* HEADER */
 
@@ -68,7 +71,7 @@ h5 {
 
 /* Po wstawieniu obrazka niepotrzebne */
 
-ul {
+header ul {
     text-align: right;
 }
 
@@ -77,12 +80,11 @@ ul {
     right: 30px;
 }
 
-.navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #f88159;
 }
 
-
-.navbar-toggle:hover .icon-bar {
+navbar-default .navbar-toggle:hover .icon-bar {
     background-color: aliceblue;
 }
 
@@ -209,6 +211,12 @@ button.accordion {
     padding: 18px;
     width: 100%;
     text-align: left;
+    /*  Wysokość sekcji  */
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: antiquewhite;
+    color: #354772;    
     border: none;
     outline: none;
     transition: 0.4s;
@@ -225,7 +233,7 @@ button.accordion:hover {
 
 /* Style the accordion panel. Note: hidden by default */
 
-#accordion-container {
+.accordion-container {
     text-align: center;
 }
 
@@ -236,6 +244,7 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     text-align: left;
+    font-size: 16px;
 }
 
 button.accordion,
@@ -247,15 +256,6 @@ button.accordion,
     /*  Odległość między sekcjami  */
     margin-bottom: 5px;
     margin: auto;
-}
-
-button.accordion {
-    /*  Wysokość sekcji  */
-    padding: 14px;
-    font-size: 16px;
-    font-weight: 400;
-    background-color: antiquewhite;
-    color: #354772;
 }
 
 button.accordion:hover {
@@ -277,6 +277,32 @@ button.accordion.active:after {
     /* Unicode character for "minus" sign (-) */
 }
 
+#logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 250px;
+    text-align: center;
+}
+
+#logos figure {
+    display: inline-block;
+    width: 19%;
+}
+
+/* KOSMETYKA */
+
+#kosmetyka {
+    background-color: floralwhite;
+}
+
+#other-services {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 7px;
+}
+
 /* SOLARIUM */
 #solarium {
     background-color: #f8fcff;
@@ -284,7 +310,7 @@ button.accordion.active:after {
 
 #solarium.parallax {
     /* The image used */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/solar.jpg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/solar.jpg);
     /* Set a specific height */
     //min-height: 500px; 
     height: 100%;
