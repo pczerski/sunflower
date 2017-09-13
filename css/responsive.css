@@ -16,6 +16,33 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+    #map {
+        width: 80%;
+    }
+    
+    #o-nas-left,
+    #o-nas-right {
+        display: block;
+        float: none;
+        width: 100%;
+    }  
+    
+    #o-nas-left {
+        padding-bottom: 50px;
+        transform: none;
+        transition-duration: 0s;
+    }
+    #o-nas-left:hover {
+        transform: none;
+        transition-duration: 0s;
+    }
+    
+    #o-nas-right {
+        padding-left: 40px;
+    }
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1024px) {
     .parallax {

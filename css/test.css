@@ -1,0 +1,15 @@
+#logos {
+    background-color: white;
+    width: 98%;
+}
+
+#logos figure {
+    //padding-top: 25px;
+    //padding-bottom: 25px;
+    
+}
+
+#logos .row {
+    line-height: 180px;
+    text-align: center;
+}

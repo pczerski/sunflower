@@ -1,6 +1,11 @@
+body {
+    margin: 0;
+/*  Usunięcie poziomego pasla przewijania  */
+    overflow-x: hidden; 
+}
+
 body,
 h5 {
-    margin: 0;
     font-family: 'Lato', sans-serif;
     //font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
     //font-family: "Georgia","Times New Roman","Times",serif;
@@ -55,7 +60,7 @@ h5 {
     padding-bottom: 120px;
 }
 
-#fryzjerstwo {
+#fryzjerstwo, #kontakt {
     padding-bottom: 0;
 }
 
@@ -161,8 +166,6 @@ navbar-default .navbar-toggle:hover .icon-bar {
 
 /* O NAS */
 
-#o-nas {}
-
 #o-nas-left,
 #o-nas-right {
     display: inline-block;
@@ -200,7 +203,6 @@ navbar-default .navbar-toggle:hover .icon-bar {
     width: 98%;
     margin: auto;
 }
-
 
 /* Style the buttons that are used to open and close the accordion panel */
 
@@ -278,17 +280,14 @@ button.accordion.active:after {
 }
 
 #logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
-    height: 250px;
-    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#logos figure {
-    display: inline-block;
-    width: 19%;
+#logos .row {
+    line-height: 90px;
+    text-align: center;
 }
 
 /* KOSMETYKA */
@@ -484,16 +483,23 @@ input:checked+label {
 
 #map,
 #dane-kontaktowe {
-    display: inline-block;
-    width: 45%;
+    //display: inline-block;
+    //width: 45%;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
 }
 
 #map {
     height: 520px;
+    width: 85%;
+    margin-bottom: 100px;
 }
 
 #dane-kontaktowe {
-    float: right;
+    margin-bottom: 80px;
 }
 
 #kontakt table {
@@ -514,11 +520,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 10px;
+    line-height: 20px;
     height: 70px;
     padding-top: 11px;
-    //background-color: #222;
-    //color: darkgray;
 }
 
 footer div {
