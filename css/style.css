@@ -184,6 +184,11 @@ navbar-default .navbar-toggle:hover .icon-bar {
     transition-duration: 4.5s;
 }
 
+#o-nas-left img {
+    width: 350px;
+    border-radius: 50%;
+}
+
 #o-nas-right {
     width: 63%;
 }
@@ -210,11 +215,12 @@ button.accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
     width: 100%;
     text-align: left;
     /*  Wysokość sekcji  */
-    padding: 14px;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
     font-weight: 400;
     background-color: antiquewhite;
@@ -271,7 +277,8 @@ button.accordion:after {
     color: #777;
     float: right;
     margin-left: 5px;
-    margin-top: 4px;
+    //margin-top: 4px;
+
 }
 
 button.accordion.active:after {
@@ -468,6 +475,10 @@ input:checked+label {
     color: aliceblue;
 }
 
+#kontakt h5 {
+    margin-top: 0;
+}
+
 #kontakt.parallax {
     /* The image used */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/salon.jpg);
@@ -495,7 +506,6 @@ input:checked+label {
 #map {
     height: 520px;
     width: 85%;
-    margin-bottom: 100px;
 }
 
 #dane-kontaktowe {
@@ -514,6 +524,16 @@ input:checked+label {
 #kontakt td,
 #kontakt th {
     border-bottom-color: transparent;
+}
+
+#kontakt a {
+    text-decoration: none;
+    color: #f88159;
+    transition: all .7s;
+}
+
+#kontakt a:hover {
+    color: aliceblue;
 }
 
 footer {

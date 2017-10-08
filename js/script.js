@@ -52,7 +52,23 @@ for (i = 0; i < acc.length; i++) {
 }
 
 // GOOGLE MAP
-function myMap() {
+function padniewskiego() {
+    var sunflower = {
+        lat: 50.06930,
+        lng: 20.02899
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.HYBRID,
+        center: sunflower
+    });
+    var marker = new google.maps.Marker({
+        position: sunflower,
+        map: map
+    });
+}
+
+function kuznicy() {
     var sunflower = {
         lat: 50.09769,
         lng: 19.95715

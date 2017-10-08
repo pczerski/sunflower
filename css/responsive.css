@@ -1,33 +1,25 @@
-@media screen and (max-width: 650px) {
-/* Taby */
-    label {
-    font-size: 0;
-  }
-  label:before {
-    margin: 0;
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-/* Taby */    
-  label {
-    padding: 15px;
-  }
-}
-
 @media screen and (max-width: 992px) {
+    #navbar-brand {
+        display: none;
+    }
+    #logo {
+        text-align: center;
+    }
+    #logo img {
+        width: 70%;
+        height: auto;
+    }
     #map {
         width: 80%;
+        height: 400px;
+        margin-bottom: 50px;
     }
-    
     #o-nas-left,
     #o-nas-right {
         display: block;
         float: none;
         width: 100%;
-    }  
-    
+    }
     #o-nas-left {
         padding-bottom: 50px;
         transform: none;
@@ -37,13 +29,88 @@
         transform: none;
         transition-duration: 0s;
     }
-    
     #o-nas-right {
         padding-left: 40px;
+    }    
+}
+
+@media screen and (max-width: 650px) {
+    /* Taby */
+    label {
+        font-size: 0;
+    }
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+    #o-nas-right {
+        padding-left: 15px;
+    }    
+    #logos img {
+        max-width: 90px;
+        max-height: 60px;
+    }
+    #logos .row {
+        line-height: 50px;
+    }
+    body,
+    h5 {
+        font-size: 16px;
+    }
+    button.accordion {
+        font-size: 13px;
+        line-height: 40px;
+    }
+    div.panel {
+        font-size: 14px;
+        padding: 0;
+    }
+    p {
+        font-size: 14px;
+    }
+    p,
+    h4 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .text-small {
+        font-size: 12px;
+    }
+    #o-nas,
+    #kosmetyka,
+    #solarium,
+    #cennik {
+        padding-bottom: 40px;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 14px;
+    }
+    .tabs {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #footer img {
+        width: 60%;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    /* Taby */
+    label {
+        padding: 15px;
+    }
+    #o-nas-left img {
+        width: 70%;
     }
 }
 
+
+
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+
 @media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
